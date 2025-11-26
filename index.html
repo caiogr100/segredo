@@ -3,74 +3,679 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>17 Dias para Você ♥</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Para Você, Meu Amor</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background-hearts"></div>
-    
-    
-    <header>
-        <h1>Uma Jornada em 17 Cartas</h1>
-        <p class="subtitle">Cada dia, uma nova mensagem para você ♥</p>
-    </header>
-
-    <div class="countdown-container" id="countdown">
-        <p>Próxima carta em: <span id="countdown-timer">...</span></p>
-    </div>
-
-    <main class="cards-container" id="cardsContainer">
-        <!-- As cartas serão geradas dinamicamente pelo JavaScript -->
-    </main>
-
-    <!-- Modal para mostrar o conteúdo da carta -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <button class="close-btn" id="closeBtn">&times;</button>
-            <div class="letter-number">Carta <span id="letterNumber"></span></div>
-            <div class="letter-initial" id="letterInitial"></div>
-            <div class="letter-content" id="letterContent"></div>
-            <button class="next-btn" id="nextBtn">Próxima Carta →</button>
+    <!-- SEÇÃO 1: ABERTURA -->
+    <section class="slide active" id="slide-1">
+        <div class="content fade-in">
+            <h1 class="main-title">Para Você, Larissa</h1>
+            <p class="subtitle">Minha princesa</p>
+            <p class="subtitle-small">Uma história que precisa ser contada</p>
+            <div class="click-hint">Clique para continuar</div>
         </div>
-    </div>
+    </section>
 
-    <!-- Modal especial para a carta final -->
-    <div class="modal final-modal" id="finalModal">
-        <div class="modal-content final-content">
-            <div class="puzzle-reveal" id="puzzleReveal"></div>
-            <div class="final-message" id="finalMessage"></div>
-            <div class="final-buttons" id="finalButtons">
-                <button class="btn-sim" id="btnSim">SIM! ♥</button>
-                <button class="btn-nao" id="btnNao">Não...</button>
+    <!-- SEÇÃO 2: ANTES DO ENCONTRO -->
+    <section class="slide" id="slide-2">
+        <div class="content">
+            <div class="chapter-number">Capítulo 1</div>
+            <h2>Eu Já Sabia</h2>
+            <p class="narrative">
+                Antes mesmo do primeiro encontro, eu já sentia que você era diferente.
+            </p>
+            <p class="narrative">
+                O jeito que você me validava, teus hobbies, o teu jeito de ser...
+            </p>
+            <p class="narrative">
+                <small>Mas aparentemente tu me achava metidinho né... </small>
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Mesmo assim, eu já sabia que você era especial.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: O PRIMEIRO ENCONTRO -->
+    <section class="slide" id="slide-3">
+        <div class="content">
+            <h2>Uma Cafeteria</h2>
+            <div class="visual-moment">
+                <img src="foto4.jpeg" alt="Buquê do primeiro encontro" class="slide-image">
             </div>
-            <div class="resposta-sim" id="respostaSim" style="display: none;">
-                <h2>AAAAAH EU SABIA! 🎉</h2>
-                <p>Você me fez o homem mais feliz do mundo! ♥♥♥</p>
-                <p>Mal posso esperar pra te ver pessoalmente e celebrar isso!</p>
+            <p class="narrative">
+                Fazem quase 2 meses. Eu tava muito nervoso.
+            </p>
+            <p class="narrative">
+                Levei flores. Levei uma carta. Mãos suando.
+            </p>
+            <p class="narrative">
+                Mas você me acalmou. Você sendo você foi perfeita.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>E então tu foi la e me beijou.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: O BEIJO -->
+    <section class="slide" id="slide-4">
+        <div class="content">
+            <p class="narrative">
+                Eu era inseguro com intimidade física.
+            </p>
+            <p class="narrative">
+                Mas aquele beijo... me destravou completamente.
+            </p>
+            <p class="narrative">
+                Você não sabia, mas naquele momento você quebrou uma parede que eu tinha.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Com você, eu perdi esse medo.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: O ACIDENTE -->
+    <section class="slide" id="slide-5">
+        <div class="content">
+            <p class="narrative">
+                Aquele primeiro dia foi tão intenso...
+            </p>
+            <p class="narrative">
+                Que eu <em>bati o carro</em> voltando pra casa.
+            </p>
+            <p class="narrative">
+                <small>(Sim, eu sei sou um pateta...)</small>
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Mas foi porque eu tinha certeza que você era a mulher da minha vida.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 6: A INTENSIDADE -->
+    <section class="slide" id="slide-6">
+        <div class="content">
+            <div class="chapter-number">Capítulo 2</div>
+            <h2>Desde Então...</h2>
+            <p class="narrative">
+                Todo fim de semana juntos.
+            </p>
+            <p class="narrative">
+                Você conheceu minha vida de playboyzinho indo em restaurantes superfaturados.
+            </p>
+            <p class="narrative">
+                <small>(Como esquecer encontrar teu professor no la invernada kkk)</small>
+            </p>
+            <p class="narrative">
+                E eu fui conhecendo tua família...
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7: O INTERROGATÓRIO -->
+    <section class="slide" id="slide-7">
+        <div class="content">
+            <h2>O Interrogatório do Tinder</h2>
+            <p class="narrative">
+                Tua mãe me fez um questionário completo sobre como a gente se conheceu.
+            </p>
+            <p class="narrative">
+                <small>(Acho que me saí bem até)</small>
+            </p>
+            <p class="narrative">
+                E ganhei o apoio de toda tua família.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Em especial do teu pai, que mesmo de longe já me aceitou.</strong>
+            </p>
+            <p class="narrative">
+                <small>(Mal posso esperar pra conhecer todos eles em janeiro)</small>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 8: A ATHENA -->
+    <section class="slide" id="slide-8">
+        <div class="content">
+            <div class="visual-moment">
+                <img src="foto5.jpeg" alt="Larissa e Athena" class="slide-image-large">
+            </div>
+            <h2>E Conheci a Athena</h2>
+            <p class="narrative">
+                Que grudou em mim desde o primeiro dia.
+            </p>
+            <p class="narrative">
+                <small>(A Flor ainda to tentando, mas ja sinto que nós tamos mais próximos)</small>
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Até tua família felina me aceitou.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 9: AS CONVERSAS -->
+    <section class="slide" id="slide-9">
+        <div class="content">
+            <h2>Todas as Noites...</h2>
+            <p class="narrative">
+                A gente fica conversando por hooooras antes de dormir.
+            </p>
+            <p class="narrative">
+                Dormimos pouco por causa disso.
+            </p>
+            <p class="narrative">
+                Mas eu não trocaria nenhuma dessas conversas por nada.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Cada palavra, cada risada, cada silêncio confortável.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 10: O CAFÉ -->
+    <section class="slide" id="slide-10">
+        <div class="content">
+            <h2>Minha Viciada Favorita</h2>
+            <p class="narrative">
+                Eu nem sabia fazer café direito.
+            </p>
+            <p class="narrative">
+                Mas aprendi.
+            </p>
+            <p class="narrative">
+                Só pra poder levar café na cama pra ti.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Porque os pequenos gestos importam.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 11: O SEGREDO -->
+    <section class="slide" id="slide-11">
+        <div class="content">
+            <div class="chapter-number">Capítulo 3</div>
+            <h2>Eu Tinha Um Segredo</h2>
+            <p class="narrative">
+                Enquanto tudo isso acontecia...
+            </p>
+            <p class="narrative">
+                Eu tava preparando algo especial.
+            </p>
+            <p class="narrative">
+                Desde o início eu sempre levei a gente a sério.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Um projeto que provava o quanto você já significava pra mim.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 12: AS 17 CARTAS - REVELAÇÃO -->
+    <section class="slide" id="slide-12">
+        <div class="content">
+            <h2 class="highlight-orange large-text">17 Cartas</h2>
+            <p class="narrative">
+                Criei 17 cartinhas com tudo que você já significava pra mim.
+            </p>
+            <p class="narrative">
+                Um site completo: <em>Uma Jornada em 17 Cartas</em>.
+            </p>
+            <p class="narrative">
+                Para você abrir durante minha viagem de 1 mês.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>E digo mais: desde então meus sentimentos só crescem.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 13: O CONCEITO GENIAL -->
+    <section class="slide" id="slide-13">
+        <div class="content">
+            <h2>Mas o Segredo Era Maior...</h2>
+            <p class="narrative">
+                Cada carta tinha uma letra inicial.
+            </p>
+            <p class="narrative">
+                E juntas, as 17 cartas formavam uma pergunta:
+            </p>
+            <div class="letters-reveal">
+                <h1 class="highlight-orange letter-by-letter">
+                    QUER NAMORAR COMIGO?
+                </h1>
             </div>
         </div>
+    </section>
+
+    <!-- SEÇÃO 14: A REVELAÇÃO -->
+    <section class="slide" id="slide-14">
+        <div class="content">
+            <p class="narrative">
+                Eu contei pra você sobre o projeto.
+            </p>
+            <p class="narrative">
+                Mostrei as artes, uma por uma, em ligação.
+            </p>
+            <p class="narrative">
+                Você ficou emocionada. Você desvendou o segredo.
+            </p>
+            <p class="narrative">
+                <strong>Mas você disse que não estava preparada.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 15: O MEDO -->
+    <section class="slide" id="slide-15">
+        <div class="content">
+            <div class="chapter-number">Capítulo 4</div>
+            <h2>Você Tinha Medo</h2>
+            <p class="narrative">
+                Medo de se entregar completamente.
+            </p>
+            <p class="narrative">
+                Medo de arriscar. Medo de se machucar.
+            </p>
+            <p class="narrative">
+                E eu te disse: "O tempo vai resolver tudo."
+            </p>
+            <p class="narrative">
+                "Vai te dar essa certeza. É só esperar."
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Então eu segui sendo eu mesmo e deixei o tempo agir.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 16: OS MOMENTOS CONTINUARAM -->
+    <section class="slide" id="slide-16">
+        <div class="content">
+            <h2>E Os Momentos Continuaram</h2>
+            <p class="narrative">
+                Cada fim de semana juntos. Cada conversa.
+            </p>
+            <p class="narrative">
+                Aqueles momentos quietos, só eu olhando pra você.
+            </p>
+            <p class="narrative">
+                Deitados na cama, no sofá, onde quer que seja.
+            </p>
+            <p class="narrative">
+                Sem falar nada. Só sentindo.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Nesses momentos eu sempre penso: "Como posso amar tanto ela?"</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 17: E TAMBÉM SOMOS ISSO -->
+    <section class="slide" id="slide-17">
+        <div class="content">
+            <h2 class="highlight-orange">E Também Somos Isso...</h2>
+            <div class="photo-gallery">
+                <div class="gallery-item">
+                    <img src="foto11.jpg" alt="Nosso momento" class="gallery-photo">
+                </div>
+                <div class="gallery-item">
+                    <img src="foto6.jpeg" alt="Nosso momento" class="gallery-photo">
+                </div>
+                <div class="gallery-item">
+                    <img src="foto12.jpg" alt="Nosso momento" class="gallery-photo">
+                </div>
+            </div>
+            <p class="narrative">
+                <strong>Te amo, princesa.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 18: A MUDANÇA -->
+    <section class="slide" id="slide-18">
+        <div class="content">
+            <div class="chapter-number">Capítulo 5</div>
+            <h2 class="highlight-orange">Até Que Tudo Mudou</h2>
+            <p class="narrative">
+                Depois do último fim de semana juntos...
+            </p>
+            <p class="narrative">
+                Você me mandou uma mensagem que mudou tudo.
+            </p>
+    </div>
+    </section>
+
+    <!-- SEÇÃO 19: A MENSAGEM DELA - SCREENSHOT -->
+    <section class="slide" id="slide-19">
+        <div class="content">
+            <div class="message-screenshot">
+                <img src="imagem-larissa.jpeg" alt="Mensagem da Larissa" class="message-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 20: DESTAQUE 1 -->
+    <section class="slide" id="slide-20">
+        <div class="content">
+            <div class="message-quote">
+                <p class="quote-text highlight-orange">
+                    "Eu olho pra você e meu coração não dispara, ele se acalma."
+                </p>
+            </div>
+            <p class="narrative">
+                <strong>Com você é assim: paz.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 21: DESTAQUE 2 -->
+    <section class="slide" id="slide-21">
+        <div class="content">
+            <div class="message-quote">
+                <p class="quote-text">
+                    "Eu não tenho dúvidas de que quero arriscar e namorar com você..."
+                </p>
+        </div>
+    </div>
+    </section>
+
+    <!-- SEÇÃO 22: DESTAQUE 3 -->
+    <section class="slide" id="slide-22">
+        <div class="content">
+            <div class="message-quote">
+                <p class="quote-text highlight-orange">
+                    "Eu sou eternamente sua."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 23: A TRANSFORMAÇÃO -->
+    <section class="slide" id="slide-23">
+        <div class="content">
+            <h2>Você Perdeu o Medo</h2>
+            <p class="narrative">
+                E ao perder o medo, você ganhou certeza.
+            </p>
+            <p class="narrative">
+                Certeza de que isso é real.
+            </p>
+            <p class="narrative">
+                Certeza de que isso é <em>nosso</em>.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Certeza de nós.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 24: O MOMENTO DIFÍCIL -->
+    <section class="slide" id="slide-24">
+        <div class="content">
+            <div class="chapter-number">Capítulo 6</div>
+            <h2>Esse Momento...</h2>
+            <p class="narrative">
+                Eu sei que esse momento tá sendo difícil pra gente.
+            </p>
+            <p class="narrative">
+                Não temos muito tempo. Estamos estressados. Sobrecarregados.
+            </p>
+            <p class="narrative">
+                Mas mesmo assim...
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>A gente encontra paz um no outro.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 25: MESMO SEM TEMPO -->
+    <section class="slide" id="slide-25">
+        <div class="content">
+            <h2>Mesmo Sem Tempo...</h2>
+            <p class="narrative">
+                Eu não paro de pensar em você.
+            </p>
+            <p class="narrative">
+                E eu sei que é mútuo.
+            </p>
+            <p class="narrative">
+                No meio do caos, da correria, do estresse...
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Você é meu refúgio. E eu sou o teu.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 26: A VIAGEM SE APROXIMA -->
+    <section class="slide" id="slide-26">
+        <div class="content">
+            <h2>E Agora...</h2>
+            <p class="narrative">
+                Em poucos dias, eu vou viajar.
+            </p>
+            <p class="narrative">
+                Um mês inteiro longe.
+            </p>
+            <p class="narrative">
+                1 mês separados fisicamente.
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 27: PODERIA SER DEPOIS -->
+    <section class="slide" id="slide-27">
+        <div class="content">
+            <h2>Eu Poderia Esperar...</h2>
+            <p class="narrative">
+                Poderia fazer isso depois, com mais tempo.
+            </p>
+            <p class="narrative">
+                Poderia ser mais elaborado, mais planejado.
+            </p>
+            <p class="narrative">
+                Mas não posso.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Porque eu preciso que você tenha algo agora.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 28: A ALIANÇA -->
+    <section class="slide" id="slide-28">
+        <div class="content">
+            <h2>Uma Aliança</h2>
+            <p class="narrative">
+                Para que você possa olhar pro teu dedo...
+            </p>
+            <p class="narrative">
+                E sentir meu apoio. Mesmo distante.
+            </p>
+            <p class="narrative">
+                Saber que eu tô ali pensando em você.
+            </p>
+            <p class="narrative">
+                Torcendo por você.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Junto com você, sempre.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 29: POR ISSO AGORA -->
+    <section class="slide" id="slide-29">
+        <div class="content">
+            <h2>Por Isso Precisa Ser Agora</h2>
+            <p class="narrative">
+                Antes de eu ir embora.
+            </p>
+            <p class="narrative">
+                Antes de passar 1 mês com saudade.
+            </p>
+            <p class="narrative">
+                Porque durante esse mês longe...
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Eu quero que você tenha esse símbolo do que a gente é.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 30: O MOMENTO -->
+    <section class="slide" id="slide-30">
+        <div class="content">
+            <div class="visual-moment">
+                <img src="foto10.jpg" alt="Nós dois" class="slide-image-large couple-photo">
+            </div>
+            <h2 class="large-text">Porque Na Prática...</h2>
+            <p class="narrative">
+                Nós já somos.
+            </p>
+            <p class="narrative">
+                Em cada gesto, em cada olhar, em cada momento juntos.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Nós já somos.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 31: O QUE EU AMO -->
+    <section class="slide" id="slide-31">
+        <div class="content">
+            <h2>Eu Amo...</h2>
+            <p class="narrative">
+                O jeito que você é <strong>esforçada e inteligente</strong>.
+            </p>
+            <p class="narrative">
+                O jeito que você é <strong>linda por dentro e por fora</strong>.
+            </p>
+            <p class="narrative">
+                O jeito <strong>espontâneo</strong> que você fala e faz as coisas.
+            </p>
+            <p class="narrative">
+                Os momentos de <strong>carinho</strong> juntos, sem fazer nada, só existindo.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Eu amo você por completo.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 32: O TEMPO É CURTO -->
+    <section class="slide" id="slide-32">
+        <div class="content">
+            <h2>Eu Queria Ter Mais Tempo...</h2>
+            <p class="narrative">
+                Queria ter preparado algo ainda mais especial.
+            </p>
+            <p class="narrative">
+                Mais elaborado. Mais grandioso.
+            </p>
+            <p class="narrative">
+                Mas o tempo tá curto, e eu não posso viajar sem fazer isso.
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Eu quero muito poder te chamar de minha.</strong>
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Oficialmente. Minha namorada.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 33: A PRAIA -->
+    <section class="slide" id="slide-33">
+        <div class="content">
+            <h2>Ah, E Uma Coisa...</h2>
+            <div class="visual-moment">
+                <img src="ilustracao-vetorial-do-paraiso-da-praia-tropical_1308-162348.avif" alt="Praia Tropical" class="slide-image-large">
+            </div>
+            <p class="narrative">
+                Eu sei que você queria MUITO que fosse na praia... 
+            </p>
+            <p class="narrative">
+                Mas como não deu tempo de ir até lá...
+            </p>
+            <p class="narrative highlight-orange">
+                <strong>Trouxe a praia aqui pro telão! </strong>
+            </p>
+            <p class="narrative">
+                <small>(Quem sabe o próximo não pode ser na praia?)</small>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 34: PRÉ-FINAL -->
+    <section class="slide" id="slide-34">
+        <div class="content">
+            <p class="narrative large-text">
+                Então, Larissa...
+            </p>
+            <p class="narrative large-text">
+                Minha princesa...
+            </p>
+            <p class="narrative large-text highlight-orange">
+                <strong>Eu só preciso te fazer uma pergunta.</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 35: QUER NAMORAR COMIGO -->
+    <section class="slide" id="slide-35">
+        <div class="content">
+            <div class="final-question">
+                <h1 class="giant-question highlight-orange breathing">
+                    Quer namorar comigo?
+                </h1>
+                <p class="narrative large-text">
+                    <small>(E eu já sei que você vai falar aquele "SIIIIIIIIIM" fofo 🧡)</small>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 36: PREPARAÇÃO PARA O PEDIDO AO VIVO -->
+    <section class="slide" id="slide-36">
+        <div class="content beach-vibes">
+            <div class="final-moment">
+                <div class="beach-emojis">🏖️ 🌊 ☀️</div>
+                <div class="heart-symbol">🧡</div>
+                <h2 class="highlight-orange breathing">Antes de eu partir...</h2>
+                <p class="narrative">
+                    <small>(Pelo menos o clima de praia eu tentei trazer 😊)</small>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTROLES -->
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
     </div>
     
-    <!-- Canvas para confetes -->
-    <canvas id="confetti-canvas"></canvas>
-
-    <!-- Controle de música -->
-    <div class="music-control" id="musicControl">
-        <div class="volume-control">
-            <span class="volume-icon">🔊</span>
-            <input type="range" id="volumeSlider" min="0" max="100" value="70" class="volume-slider">
-        </div>
-        <button id="musicToggle" title="Clique para tocar música">🎵</button>
-        <span class="music-label">Lover - Taylor Swift</span>
+    <div class="navigation">
+        <button id="prevBtn" class="nav-btn" disabled>←</button>
+        <span class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">36</span></span>
+        <button id="nextBtn" class="nav-btn">→</button>
     </div>
 
-    <audio id="bgMusic" loop autoplay>
-        <source src="music.mp3" type="audio/mpeg">
+    <!-- MÚSICA DE FUNDO -->
+    <audio id="backgroundMusic" loop>
+        <source src="Clipto-AI-video-downloader_Jade-LeMac-Constellations-_Lyric-Video_.mp3" type="audio/mpeg">
     </audio>
 
     <script src="script.js"></script>
 </body>
 </html>
+
