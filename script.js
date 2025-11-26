@@ -146,11 +146,11 @@ document.addEventListener('wheel', (e) => {
 // EFEITOS ESPECIAIS PARA SLIDES ESPECÍFICOS
 // ========================================
 
-// Adicionar efeito especial ao entrar no último slide (slide 36)
+// Adicionar efeito especial ao entrar no último slide (slide 34)
 const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
         if (mutation.target.classList.contains('active') && 
-            mutation.target.id === 'slide-36') {
+            mutation.target.id === 'slide-34') {
             // Último slide ativo - momento do pedido!
             console.log('Momento especial! 🧡');
         }

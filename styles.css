@@ -93,21 +93,53 @@ body::before {
     z-index: 10;
 }
 
+/* Decorações em todos os slides */
+.slide::before {
+    content: '✨';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    opacity: 0.4;
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+.slide::after {
+    content: '🧡';
+    position: absolute;
+    bottom: 140px;
+    left: 30px;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    animation: heartFloat 4s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; transform: scale(1) rotate(0deg); }
+    50% { opacity: 0.6; transform: scale(1.2) rotate(180deg); }
+}
+
+@keyframes heartFloat {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 0.5; transform: translateY(-15px); }
+}
+
 .slide.active {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
     animation: slideEntrance 1s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 20;
 }
 
 @keyframes slideEntrance {
     0% {
-        opacity: 0;
+    opacity: 0;
         transform: scale(0.9) translateY(40px);
         filter: blur(10px);
-    }
+}
     100% {
-        opacity: 1;
+    opacity: 1;
         transform: scale(1) translateY(0);
         filter: blur(0);
     }
@@ -711,7 +743,7 @@ h2 {
 
 @keyframes heartbeat {
     0%, 100% {
-        transform: scale(1); 
+        transform: scale(1);
         filter: drop-shadow(0 0 30px rgba(255, 140, 66, 0.8));
     }
     10%, 30% { 
